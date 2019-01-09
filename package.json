@@ -1,0 +1,23 @@
+{
+  "name": "sentiment-analysis",
+  "version": "0.0.1",
+  "description": "Sentiment analysis using AWS architecture",
+  "main": "comprehend.js",
+  "dependencies": {
+    "aws-sdk": "^2.384.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gkessman/sentiment-analysis.git"
+  },
+  "author": "Greg Kessman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gkessman/sentiment-analysis/issues"
+  },
+  "homepage": "https://github.com/gkessman/sentiment-analysis#readme"
+}
