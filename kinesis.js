@@ -1,15 +1,22 @@
+if (process.argv.length <= 2) {
+    console.log("Missing argument..");
+    console.log("Usage: " + __filename + " <word>");
+    process.exit(-1);
+}
+
 var twitter = require('twitter');
 var aws = require('aws-sdk');
 
 var twitter_api_creds = require('./config/twitter.json');
 aws.config.loadFromPath('./config/aws.json');
+const searchWord = process.argv[2];
 
 var kinesis = new aws.Kinesis();
 
 var client = new twitter(twitter_api_creds);
 
 var stream = client.stream('statuses/filter', {
-    track: 'cat',
+    track: searchWord,
     language: 'en'
 });
 
