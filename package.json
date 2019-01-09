@@ -4,7 +4,8 @@
   "description": "Sentiment analysis using AWS architecture",
   "main": "comprehend.js",
   "dependencies": {
-    "aws-sdk": "^2.384.0"
+    "aws-sdk": "^2.384.0",
+    "twitter": "^1.7.1"
   },
   "devDependencies": {},
   "scripts": {
