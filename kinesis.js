@@ -42,3 +42,7 @@ stream.on('data', function(event) {
 stream.on('error', function(error) {
     throw error;
 });
+
+process.on('SIGINT', function() {
+    process.exit();
+});
